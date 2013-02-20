@@ -1,0 +1,40 @@
+[user]
+    name = Denis Khurtin
+    email = KhurtinDN@gmail.com
+
+[core]
+    editor = vim
+    autocrlf = input
+ 
+[diff]
+    guitool = meld
+    external = git-diff-wrapper.sh
+
+[merge]
+    tool = meld
+
+[log]
+    decorate = full
+
+[color]
+    diff = true
+    grep = true
+    status = true
+    ui = true
+
+    [color "diff"]
+        meta = normal
+        frag = magenta bold
+        old = red bold
+        new = blue bold
+        whitespace = red reverse
+
+    [color "branch"]
+        current = yellow reverse
+        local = yellow
+        remote = green
+
+    [color "status"]
+        added = yellow
+        changed = green
+        untracked = cyan
